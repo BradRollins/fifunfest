@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import heroLakeside from "@/assets/hero-lakeside-no-mountains.jpg";
+import heroLakeside from "@/assets/hero-lakeside-no-hills.jpg";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -33,7 +33,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <h1 className="font-hero font-bold text-6xl md:text-8xl lg:text-9xl text-foreground mb-6 animate-fade-in">
-          FI FUNFEST
+          FI FunFest
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl text-foreground/90 mb-12 font-rubik font-light max-w-3xl mx-auto leading-relaxed animate-slide-up">
           A weekend of fun, connection and friendships at a lakeside retreat celebrating the FI Community!
