@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Location = () => {
   const openDirections = () => {
-    window.open("https://www.google.com/maps/search/?api=1&query=88+SE+75th+St+Starke+FL+32091", "_blank");
+    window.open("https://www.google.com/maps/place/88+SE+75th+St,+Starke,+FL+32091", "_blank");
   };
 
   return (
@@ -66,14 +66,14 @@ const Location = () => {
               <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
                 <div className="h-96 bg-muted flex items-center justify-center">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.123456789!2d-82.123456789!3d29.987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDU5JzE2LjQiTiA4MsKwMDcnMjQuNCJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3428.8967891234567!2d-82.10876148482!3d29.947123981933598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e62f4c8c8c8c8d%3A0x1234567890abcdef!2s88%20SE%2075th%20St%2C%20Starke%2C%20FL%2032091!5e0!3m2!1sen!2sus!4v1645123456789"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Montgomery Center Location"
+                    title="Montgomery Center Location - 88 SE 75th St, Starke, FL 32091"
                   ></iframe>
                 </div>
               </Card>
