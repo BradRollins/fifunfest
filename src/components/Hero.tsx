@@ -12,8 +12,7 @@ const Hero = () => {
   }, []);
 
   const handleTicketClick = () => {
-    // Placeholder for Stripe checkout
-    window.open("https://stripe.com/checkout", "_blank");
+    window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank");
   };
 
   return (
@@ -44,7 +43,7 @@ const Hero = () => {
           <Button 
             variant="hero" 
             size="lg" 
-            className="text-lg px-8 py-6 animate-float"
+            className="text-lg px-8 py-6"
             onClick={handleTicketClick}
           >
             Get Your Tickets Now

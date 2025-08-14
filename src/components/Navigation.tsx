@@ -55,12 +55,19 @@ const Navigation = () => {
             >
               Location
             </button>
-            <Button variant="hero">
+            <Button 
+              variant="hero"
+              onClick={() => window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank")}
+            >
               Get Tickets
             </Button>
           </div>
           
-          <Button variant="hero" className="md:hidden">
+          <Button 
+            variant="hero" 
+            className="md:hidden"
+            onClick={() => window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank")}
+          >
             Tickets
           </Button>
         </div>

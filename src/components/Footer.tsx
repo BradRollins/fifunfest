@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const handleTicketClick = () => {
-    window.open("https://stripe.com/checkout", "_blank");
+    window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank");
   };
 
   const openMap = () => {
