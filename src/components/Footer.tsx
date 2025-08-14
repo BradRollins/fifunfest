@@ -39,8 +39,7 @@ const Footer = () => {
                 Contact
               </h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Email: info@fifunfest.com</p>
-                <p>Phone: (555) 123-4567</p>
+                <p>Email: fifunfest@gmail.com</p>
                 <p>Questions? We're here to help!</p>
               </div>
             </div>
