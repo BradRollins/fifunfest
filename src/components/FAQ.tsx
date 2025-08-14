@@ -29,7 +29,7 @@ const FAQ = () => {
     },
     {
       question: "Can I come alone?",
-      answer: "Absolutely! Many attendees come solo and leave with new lifelong friendships. The community atmosphere makes it easy to connect with others."
+      answer: "Absolutely! The cabins are duplex style with 2 adults per side. If an attendee comes solo, they'll be paired with a roommate."
     },
     {
       question: "What if I have dietary restrictions?",
