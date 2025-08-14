@@ -25,7 +25,7 @@ const About = () => {
               
               <div className="text-lg text-foreground space-y-4 leading-relaxed">
                 <p>
-                  This 2-night getaway is all about fun, connection, and celebration of the amazing FI Community. 
+                  This 2-night getaway is all about fun, connection, and celebrating the FI Community.
                   It will be a playful, unplugged weekend hanging with your favorite FI friends (new & old). 
                   No speakers. No slide decks. Just pure community, meaningful conversations, outdoor adventures, 
                   a few structed activities, but plenty of unstructured time to relax, unwind, enjoy the beautiful 
