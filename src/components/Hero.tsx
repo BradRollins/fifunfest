@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import heroLakeside from "@/assets/hero-lakeside.jpg";
+import heroLakeside from "@/assets/hero-lakeside-no-mountains.jpg";
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
