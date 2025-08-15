@@ -2,11 +2,11 @@ import { Card } from "@/components/ui/card";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-background">
+    <section id="about" className="py-20 pt-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-hero font-bold text-center mb-16 text-foreground">
-            💬 What's FI FUN FEST All About?
+            💬 What's FI FunFest All About?
           </h2>
           
           <div className="grid md:grid-cols-2 gap-12 items-start">
