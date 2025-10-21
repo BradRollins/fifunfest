@@ -74,7 +74,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
-                  Facebook Community
+                  FI FunFest Facebook Community
                 </a>
                 <a 
                   href="https://instagram.com/fifunfest" 
