@@ -11,12 +11,12 @@ const Gallery = () => {
     {
       src: gallery1,
       alt: "Lakeside retreat activities - canoeing, campfire, and outdoor fun",
-      title: "Community Activities"
+      title: "Fun Group Activities"
     },
     {
       src: gallery2,
       alt: "Beautiful lakeside cabins surrounded by pine trees at golden hour",
-      title: "Peaceful Accommodations"
+      title: "Beautiful Retreat Center"
     },
     {
       src: gallery3,
