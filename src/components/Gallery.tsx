@@ -49,7 +49,7 @@ const Gallery = () => {
                   <div className="absolute inset-0 bg-gradient-warm opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-hero font-semibold text-foreground">
+                  <h3 className="text-lg font-hero font-semibold text-foreground text-center">
                     {image.title}
                   </h3>
                 </div>
