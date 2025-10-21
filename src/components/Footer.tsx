@@ -77,7 +77,7 @@ const Footer = () => {
                   FI FunFest Alumni - Facebook
                 </a>
                 <a 
-                  href="https://instagram.com/fifunfest" 
+                  href="https://www.facebook.com/groups/campfialumni" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
@@ -85,7 +85,7 @@ const Footer = () => {
                   CampFI Alumni - Facebook
                 </a>
                 <a 
-                  href="https://www.facebook.com/groups/campfialumni" 
+                  href="" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
