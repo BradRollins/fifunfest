@@ -69,7 +69,7 @@ const Footer = () => {
               </h4>
               <div className="space-y-3">
                 <a 
-                  href="https://facebook.com/fifunfest" 
+                  href="https://www.facebook.com/groups/fifunfest" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
