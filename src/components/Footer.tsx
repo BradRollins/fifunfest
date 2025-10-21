@@ -85,12 +85,12 @@ const Footer = () => {
                   CampFI Alumni - Facebook
                 </a>
                 <a 
-                  href="" 
+                  href="https://www.facebook.com/groups/ChooseFI" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
-                  Twitter News
+                  ChooseFI - Facebook
                 </a>
               </div>
             </div>
