@@ -66,13 +66,12 @@ const Location = () => {
               <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
                 <div className="h-96 w-full">
                   <iframe
-                    src="https://maps.google.com/maps?q=88+SE+75th+St,+Starke,+FL+32091&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-82.11876,29.93712,-82.09876,29.95712&layer=mapnik&marker=29.94712,-82.10876"
                     width="100%"
                     height="384"
                     style={{ border: 0 }}
                     allowFullScreen
                     loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
                     title="Montgomery Center Location"
                   ></iframe>
                 </div>
