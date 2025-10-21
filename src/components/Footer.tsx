@@ -74,7 +74,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
-                  FI FunFest Facebook Community
+                  FI FunFest Alumni - Facebook
                 </a>
                 <a 
                   href="https://instagram.com/fifunfest" 
@@ -82,10 +82,10 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
-                  Instagram Updates
+                  CampFI Alumni - Facebook
                 </a>
                 <a 
-                  href="https://twitter.com/fifunfest" 
+                  href="https://www.facebook.com/groups/campfialumni" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
