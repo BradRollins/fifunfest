@@ -92,6 +92,14 @@ const Footer = () => {
                 >
                   ChooseFI - Facebook
                 </a>
+                 <a 
+                  href="https://www.facebook.com/groups/365138723944607" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-muted-foreground hover:text-accent transition-colors"
+                >
+                  ChooseFI Jacksonville 
+                </a>                
               </div>
             </div>
           </div>
