@@ -69,20 +69,20 @@ const Footer = () => {
               </h4>
               <div className="space-y-3">
                 <a 
+                  href="https://www.facebook.com/profile.php?id=61582460110002" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block text-muted-foreground hover:text-accent transition-colors"
+                >
+                  FI FunFest- Facebook
+                </a>
+                <a 
                   href="https://www.facebook.com/groups/fifunfest" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
                   FI FunFest Alumni - Facebook
-                </a>
-                <a 
-                  href="https://www.facebook.com/groups/campfialumni" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="block text-muted-foreground hover:text-accent transition-colors"
-                >
-                  CampFI Alumni - Facebook
                 </a>
                 <a 
                   href="https://www.facebook.com/groups/ChooseFI" 
