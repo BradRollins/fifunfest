@@ -98,7 +98,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className="block text-muted-foreground hover:text-accent transition-colors"
                 >
-                  ChooseFI Jacksonville 
+                  ChooseFI Jacksonville - Facebook 
                 </a>                
               </div>
             </div>
