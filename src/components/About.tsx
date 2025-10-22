@@ -13,13 +13,26 @@ const About = () => {
             {/* Left Column - Main Description */}
             <div className="space-y-6">
               <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
-                <h3 className="text-2xl font-hero font-semibold mb-4 text-accent">
-                  Location
-                </h3>
-                <div className="text-lg text-muted-foreground space-y-1">
-                  <p>Montgomery Center</p>
-                  <p>88 SE 75th St</p>
-                  <p>Starke, FL 32091</p>
+                <div className="flex justify-between items-start gap-6">
+                  <div className="flex-shrink-0">
+                    <h3 className="text-xl font-hero font-semibold mb-2 text-accent">
+                      Date:
+                    </h3>
+                    <p className="text-lg text-muted-foreground">
+                      November 14 - 16, 2025
+                    </p>
+                  </div>
+
+                  <div className="text-right">
+                    <h3 className="text-xl font-hero font-semibold mb-2 text-accent">
+                      Location
+                    </h3>
+                    <div className="text-lg text-muted-foreground space-y-1">
+                      <p>Montgomery Center</p>
+                      <p>88 SE 75th St</p>
+                      <p>Starke, FL 32091</p>
+                    </div>
+                  </div>
                 </div>
               </Card>
               
