@@ -86,6 +86,7 @@ const Location = () => {
                   <p>• Approximately 1 hour drive from Jacksonville</p>
                   <p>• 2 hours from Orlando</p>
                   <p>• Closest airport: Gainesville Regional (1 hour)</p>
+                  <p>• There is an Exxon station right before the location with good beverage and snack optons</p>
                   <p>• We get an early 2pm check-in, join us early if you can!</p>
                 </div>
               </Card>
