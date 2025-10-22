@@ -16,7 +16,7 @@ const About = () => {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-xl font-hero font-semibold mb-2 text-accent">
-                      Date:
+                      Dates
                     </h3>
                     <p className="text-lg text-muted-foreground">
                       November 14 - 16, 2025
