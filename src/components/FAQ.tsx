@@ -9,7 +9,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What should I bring?",
-      answer: "Pack Pack comfortable outdoor clothing, hiking shoes, swimwear, sunscreen, and any personal items you need. Bedding and meals are provided. Don't forget your sense of adventure!"
+      answer: "Pack Pack comfortable outdoor clothing, insect repellent, hiking shoes, sunscreen, and any personal items you need. Bedding and meals are provided. Don't forget your sense of adventure!"
     },
     {
       question: "Are pets really allowed?",
