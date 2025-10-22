@@ -13,8 +13,8 @@ const About = () => {
             {/* Left Column - Main Description */}
             <div className="space-y-6">
               <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
-                <div className="flex justify-between items-start gap-6">
-                  <div className="flex-shrink-0">
+                <div className="space-y-6">
+                  <div>
                     <h3 className="text-xl font-hero font-semibold mb-2 text-accent">
                       Date:
                     </h3>
@@ -23,7 +23,7 @@ const About = () => {
                     </p>
                   </div>
 
-                  <div className="text-right">
+                  <div>
                     <h3 className="text-xl font-hero font-semibold mb-2 text-accent">
                       Location
                     </h3>
