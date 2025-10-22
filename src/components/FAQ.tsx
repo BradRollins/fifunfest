@@ -37,7 +37,7 @@ const FAQ = () => {
     },
     {
       question: "Is there a refund policy?",
-      answer: "We understand plans can change. Please contact us as soon as possible if you need to cancel. Refund policies will be clearly outlined during registration."
+      answer: "Tickets are non-refundable but may be transferred or sold to another guest (notify us at least 14 days before Nov 14)."
     }
   ];
 
