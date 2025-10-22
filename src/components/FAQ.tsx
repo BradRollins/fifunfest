@@ -33,7 +33,7 @@ const FAQ = () => {
     },
     {
       question: "What if I have dietary restrictions?",
-      answer: "We can accommodate most dietary needs. Please specify any restrictions or allergies when registering, and our kitchen team will take great care of you."
+      answer: "We can accommodate most dietary needs. Please let us know of any restrictions or allergies at least 2 wks in advance, and the kitchen team at Montgomery Center should be able to accomodate most dietary needs."
     },
     {
       question: "Is there a refund policy?",
