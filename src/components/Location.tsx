@@ -62,19 +62,22 @@ const Location = () => {
             </div>
             
             {/* Map Embed */}
-            <div className="space-y-8">
-              <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
-                <div className="h-96 w-full">
-                  <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=-82.11876,29.93712,-82.09876,29.95712&layer=mapnik&marker=29.94712,-82.10876"
-                    width="100%"
-                    height="384"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    title="Montgomery Center Location"
-                  ></iframe>
-                </div>
+<div className="space-y-8">
+  <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
+    <div className="h-96 w-full">
+      <iframe
+        src="https://maps.app.goo.gl/9zMN9VsUNgx23uUn8"
+        width="100%"
+        height="384"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Montgomery Center Location"
+      ></iframe>
+    </div>
+  </Card>
+</div>
               </Card>
               
               <Card className="p-8 border-border/50 bg-card/80 backdrop-blur-sm">
