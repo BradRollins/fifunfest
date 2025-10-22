@@ -53,6 +53,12 @@ const Navigation = () => {
               onClick={() => scrollToSection("location")}
               className="text-foreground hover:text-accent transition-colors font-medium"
             >
+               FAQ
+            </button>
+            <button
+              onClick={() => scrollToSection("FAQ")}
+              className="text-foreground hover:text-accent transition-colors font-medium"
+            >
               Location
             </button>
             <Button 
