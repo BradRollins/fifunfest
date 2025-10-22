@@ -76,8 +76,6 @@ const Location = () => {
         title="88 SE 75th Street, Starke, FL 32091"
       ></iframe>
     </div>
-  </Card>
-</div>        
           </Card>
               
               <Card className="p-8 border-border/50 bg-card/80 backdrop-blur-sm">
