@@ -50,13 +50,13 @@ const Navigation = () => {
               Gallery
             </button>
             <button
-              onClick={() => scrollToSection("FAQ")}
+              onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-accent transition-colors font-medium"
             >
                FAQ
             </button>
             <button
-              onClick={() => scrollToSection("Location")}
+              onClick={() => scrollToSection("location")}
               className="text-foreground hover:text-accent transition-colors font-medium"
             >
               Location
