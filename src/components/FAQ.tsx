@@ -37,7 +37,7 @@ const FAQ = () => {
     },
     {
       question: "Is there a refund policy?",
-      answer: "Tickets are non-refundable but may be transferred or sold to another guest (notify us at least 14 days before Nov 14)."
+      answer: "Tickets are non-refundable, but they can be transferred or sold to another guest. You’ll be responsible for finding a buyer, though we’re happy to help connect you with someone if possible. If you plan to transfer your ticket, please let us know at least two weeks before the event so we can update our records and make sure everything runs smoothly. 💛"
     }
   ];
 
