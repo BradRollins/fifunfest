@@ -13,7 +13,7 @@ const FAQ = () => {
     },
     {
       question: "Are pets really allowed?",
-      answer: "Yes! Pets are welcome in the cabins. Please let us know when registering if you'll be bringing a furry friend so we can ensure appropriate accommodations."
+      answer: "Pets are welcome in cabins! If you’re sharing a cabin with someone outside your household, please coordinate in advance to make sure your roommate is comfortable with a pet.  All pets must remain on a leash when outside and under their owner’s control at all times.  Please notify us ahead of time if you plan to bring a pet so we can confirm appropriate accommodations."
     },
     {
       question: "What if I'm new to the FI community?",
