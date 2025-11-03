@@ -107,7 +107,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="border-t border-border/30 pt-8 mt-12 text-center">
             <p className="text-sm text-muted-foreground">
-              © 2024 FI FunFest. Made with ❤️ for the FI community.
+              © 2025 FI FunFest. Made with ❤️ for the FI community.
             </p>
           </div>
         </div>
