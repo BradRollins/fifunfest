@@ -1,10 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { showTicketsComingSoon } from "@/lib/tickets";
 
 const Footer = () => {
-  const handleTicketClick = () => {
-    window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank");
-  };
-
   const openMap = () => {
     window.open("https://www.google.com/maps/search/?api=1&query=88+SE+75th+St+Starke+FL+32091", "_blank");
   };
@@ -24,7 +21,7 @@ const Footer = () => {
             <Button 
               variant="hero" 
               size="lg" 
-              onClick={handleTicketClick}
+              onClick={showTicketsComingSoon}
               className="text-xl px-12 py-6"
             >
               Secure Your Spot Now

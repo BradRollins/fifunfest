@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { showTicketsComingSoon } from "@/lib/tickets";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,18 +62,18 @@ const Navigation = () => {
             >
               Location
             </button>
-            <Button 
+            <Button
               variant="hero"
-              onClick={() => window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank")}
+              onClick={showTicketsComingSoon}
             >
               Get Tickets
             </Button>
           </div>
-          
-          <Button 
-            variant="hero" 
+
+          <Button
+            variant="hero"
             className="md:hidden"
-            onClick={() => window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank")}
+            onClick={showTicketsComingSoon}
           >
             Tickets
           </Button>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
+import { showTicketsComingSoon } from "@/lib/tickets";
 import heroLakeside from "@/assets/hero-lakeside-no-hills.jpg";
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -8,9 +9,6 @@ const Hero = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const handleTicketClick = () => {
-    window.open("https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00", "_blank");
-  };
   return (
     <section
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
@@ -41,7 +39,7 @@ const Hero = () => {
             variant="hero"
             size="lg"
             className="text-lg px-8 py-6"
-            onClick={handleTicketClick}
+            onClick={showTicketsComingSoon}
           >
             Get Your Tickets Now
           </Button>
