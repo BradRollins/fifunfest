@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { showTicketsComingSoon } from "@/lib/tickets";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,8 +18,12 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/") {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate(`/#${sectionId}`);
+    }
   };
 
   return (
@@ -27,9 +34,9 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="font-hero font-bold text-xl text-foreground">
+          <Link to="/" className="font-hero font-bold text-xl text-foreground">
             FI FunFest
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center space-x-8">
             <button
@@ -38,6 +45,12 @@ const Navigation = () => {
             >
               About
             </button>
+            <Link
+              to="/our-story"
+              className="text-foreground hover:text-accent transition-colors font-medium"
+            >
+              Our Story
+            </Link>
             <button
               onClick={() => scrollToSection("schedule")}
               className="text-foreground hover:text-accent transition-colors font-medium"
@@ -50,6 +63,12 @@ const Navigation = () => {
             >
               Gallery
             </button>
+            <Link
+              to="/past-events"
+              className="text-foreground hover:text-accent transition-colors font-medium"
+            >
+              Past Events
+            </Link>
             <button
               onClick={() => scrollToSection("faq")}
               className="text-foreground hover:text-accent transition-colors font-medium"

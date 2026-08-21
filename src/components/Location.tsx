@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Location = () => {
   const openDirections = () => {
-    window.open("https://www.google.com/maps/place/88+SE+75th+St,+Starke,+FL+32091", "_blank");
+    window.open("https://www.google.com/maps/dir/?api=1&destination=88+SE+75th+St,+Starke,+FL+32091", "_blank");
   };
 
   return (
@@ -66,7 +66,7 @@ const Location = () => {
   <Card className="overflow-hidden border-border/50 bg-card/50 backdrop-blur-sm">
     <div className="h-96 w-full">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.7891234567!2d-82.10876!3d29.94712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e8358f123456!2s88+SE+75th+St%2C+Starke%2C+FL+32091!5e0!3m2!1sen!2sus!4v1729612345678!5m2!1sen!2sus"
+        src="https://www.google.com/maps?q=88+SE+75th+St,+Starke,+FL+32091&output=embed"
         width="100%"
         height="384"
         style={{ border: 0 }}

@@ -5,8 +5,7 @@ import {
   DialogContent,
   DialogTitle,
 } from "@/components/ui/dialog";
-// TODO: swap this placeholder for a real video thumbnail once one is available
-import posterImage from "@/assets/joint_meetup.jpg";
+import posterImage from "@/assets/Video Image.jpg";
 
 const VIDEO_SRC = "/videos/funfest-2025-highlights.mp4";
 
@@ -25,7 +24,7 @@ const ScheduleVideo = () => {
   return (
     <div className="flex flex-col items-center gap-2 w-full h-full">
       <span className="text-sm text-foreground/80">
-        🎥 Watch 2025 Highlights
+        🎥 Watch 2025 Field Day Action
       </span>
 
       <div className="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20">
