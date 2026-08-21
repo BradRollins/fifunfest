@@ -8,7 +8,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-hero font-bold text-center mb-16 text-foreground">
             💬 What's FI FunFest All About?
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left Column - Main Description */}
             <div className="space-y-6">
@@ -19,7 +19,7 @@ const About = () => {
                       Dates
                     </h3>
                     <p className="text-lg text-muted-foreground">
-                      November 14 - 16, 2025
+                      November 13 - 15, 2026
                     </p>
                   </div>
 
@@ -35,23 +35,29 @@ const About = () => {
                   </div>
                 </div>
               </Card>
-              
+
               <div className="text-lg text-foreground space-y-4 leading-relaxed">
                 <p>
-                  This 2-night getaway is all about fun, connection, and celebrating the FI Community.
-                  It will be a playful, unplugged weekend hanging with your favorite FI friends (new & old). 
-                  No speakers. No slide decks. Just pure community, meaningful conversations, outdoor adventures, 
-                  a few structed activities, but plenty of unstructured time to relax, unwind, enjoy the beautiful 
-                  lakeside grounds and the freedom to choose your own pace.
+                  FI FunFest returns! Back by popular demand, what a blast we
+                  had last year! For those new to the Fi FunFest scene, this
+                  2-night getaway is all about fun, connection, and celebrating
+                  the FI Community. It will be a playful, unplugged weekend
+                  hanging with your favorite FI friends (new & old). No
+                  speakers. No slide decks. Just pure community, meaningful
+                  conversations, outdoor adventures, a few structed activities,
+                  but plenty of unstructured time to relax, unwind, enjoy the
+                  beautiful lakeside grounds and the freedom to choose your own
+                  pace.
                 </p>
-                
+
                 <p>
-                  Whether you're hiking, laughing around a fire, singing karaoke, or joining a spontaneous salsa 
-                  class—this weekend is about recharging, connecting, and just being a kid again.
+                  Whether you're hiking, laughing around a fire, singing
+                  karaoke, or joining a spontaneous salsa class—this weekend is
+                  about recharging, connecting, and just being a kid again.
                 </p>
               </div>
             </div>
-            
+
             {/* Right Column - What's Included */}
             <div className="space-y-8">
               <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
@@ -60,8 +66,8 @@ const About = () => {
                 </h3>
                 <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
-                    <span className="text-accent mr-3">•</span>
-                    2 nights lodging + 5 delicious meals
+                    <span className="text-accent mr-3">•</span>2 nights lodging
+                    + 5 delicious meals
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>
@@ -69,7 +75,8 @@ const About = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>
-                    Nature walks, lake time, campfires, enjoyable conversations, spontaneous fun
+                    Nature walks, lake time, campfires, enjoyable conversations,
+                    spontaneous fun
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>
@@ -77,15 +84,21 @@ const About = () => {
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>
-                    Laid back, easy going environment with peaceful outdoor vibes
+                    Laid back, easy going environment with peaceful outdoor
+                    vibes
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>
                     Indoor and outdoor activities for all to enjoy
                   </li>
+                  <li className="flex items-start">
+                    <span className="text-accent mr-3">•</span>
+                    T-shirts included this year, along with your certified Fun
+                    Ambassador button badge!
+                  </li>
                 </ul>
               </Card>
-              
+
               <Card className="p-8 border-border/50 bg-card/50 backdrop-blur-sm">
                 <h3 className="text-2xl font-hero font-semibold mb-6 text-accent">
                   🍽️ Meal Times (All Meals Included!)
@@ -107,10 +120,11 @@ const About = () => {
               </Card>
             </div>
           </div>
-          
+
           <div className="text-center mt-12">
             <p className="text-lg text-muted-foreground italic max-w-3xl mx-auto">
-              If you're into FI, enjoying the outdoors, community, and the freedom to design life on your terms—this weekend is for you.
+              If you're into FI, enjoying the outdoors, community, and the
+              freedom to design life on your terms—this weekend is for you.
             </p>
           </div>
         </div>
