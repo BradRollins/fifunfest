@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { useTicketPasscode } from "@/components/TicketPasscodeProvider";
+import { openTicketCheckout } from "@/lib/tickets";
 
 const Footer = () => {
-  const { openTicketDialog } = useTicketPasscode();
   const openMap = () => {
     window.open("https://www.google.com/maps/search/?api=1&query=88+SE+75th+St+Starke+FL+32091", "_blank");
   };
@@ -22,7 +21,7 @@ const Footer = () => {
             <Button 
               variant="hero" 
               size="lg" 
-              onClick={openTicketDialog}
+              onClick={openTicketCheckout}
               className="text-xl px-12 py-6"
             >
               Secure Your Spot Now

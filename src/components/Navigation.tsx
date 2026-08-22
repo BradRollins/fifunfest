@@ -1,13 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { useTicketPasscode } from "@/components/TicketPasscodeProvider";
+import { openTicketCheckout } from "@/lib/tickets";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-  const { openTicketDialog } = useTicketPasscode();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -84,7 +83,7 @@ const Navigation = () => {
             </button>
             <Button
               variant="hero"
-              onClick={openTicketDialog}
+              onClick={openTicketCheckout}
             >
               Get Tickets
             </Button>
@@ -93,7 +92,7 @@ const Navigation = () => {
           <Button
             variant="hero"
             className="md:hidden"
-            onClick={openTicketDialog}
+            onClick={openTicketCheckout}
           >
             Tickets
           </Button>
