@@ -1,8 +1,13 @@
 import { toast } from "sonner";
 
-// TODO: once the 2026 Stripe checkout link is ready, point this at it directly
-// (e.g. window.open(STRIPE_TICKET_URL, "_blank")) instead of showing the toast.
-export const STRIPE_TICKET_URL = "https://buy.stripe.com/9B6eV69AD057bIq2hE3VC00";
+export const STRIPE_TICKET_URL = "https://buy.stripe.com/3cI6oA8wzg45aEm6xU3VC03";
+
+// Temporary alumni early-access passcode, active until EARLY_ACCESS_ENDS.
+export const ALUMNI_PASSCODE = "FFF26";
+
+// Passcode gate is active until this moment; after it, ticket buttons go
+// straight to STRIPE_TICKET_URL. Sunday 8/23/26 12:00pm EDT (UTC-4).
+export const EARLY_ACCESS_ENDS = new Date("2026-08-23T12:00:00-04:00");
 
 export const showTicketsComingSoon = () => {
   toast("🎉 2026 Tickets coming soon!!", {

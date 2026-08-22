@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { showTicketsComingSoon } from "@/lib/tickets";
+import { useTicketPasscode } from "@/components/TicketPasscodeProvider";
 import heroLakeside from "@/assets/hero-lakeside-no-hills.jpg";
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
+  const { openTicketDialog } = useTicketPasscode();
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +40,7 @@ const Hero = () => {
             variant="hero"
             size="lg"
             className="text-lg px-8 py-6"
-            onClick={showTicketsComingSoon}
+            onClick={openTicketDialog}
           >
             Get Your Tickets Now
           </Button>
