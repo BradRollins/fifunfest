@@ -3,7 +3,7 @@ import { toast } from "sonner";
 export const STRIPE_TICKET_URL = "https://buy.stripe.com/3cI6oA8wzg45aEm6xU3VC03";
 
 // Temporary alumni early-access passcode, active until EARLY_ACCESS_ENDS.
-export const ALUMNI_PASSCODE = "FFF26";
+export const ALUMNI_PASSCODE = "BIGDEAL26";
 
 // Passcode gate is active until this moment; after it, ticket buttons go
 // straight to STRIPE_TICKET_URL. Sunday 8/23/26 12:00pm EDT (UTC-4).
