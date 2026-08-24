@@ -6,6 +6,12 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const FEATURED_FIRST_PHOTO = "584693472_10214082362968642_663001900185099954_n";
 
+// Swapped so the group photo (originally 7th) shows in the 3rd slot instead.
+const SWAPPED_PHOTO_PAIR = [
+  "582607758_10214082364288675_2344055407681550787_n",
+  "FF25GroupPics1",
+];
+
 const pastEventPhotos = Object.entries(
   import.meta.glob<{ default: string }>(
     "/src/assets/past-events-2025/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}",
@@ -20,6 +26,16 @@ const pastEventPhotos = Object.entries(
     return pathA.localeCompare(pathB);
   })
   .map(([, mod]) => mod.default);
+
+const [swapIndexA, swapIndexB] = SWAPPED_PHOTO_PAIR.map((name) =>
+  pastEventPhotos.findIndex((src) => src.includes(name)),
+);
+if (swapIndexA !== -1 && swapIndexB !== -1) {
+  [pastEventPhotos[swapIndexA], pastEventPhotos[swapIndexB]] = [
+    pastEventPhotos[swapIndexB],
+    pastEventPhotos[swapIndexA],
+  ];
+}
 
 const PastEvents = () => {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
