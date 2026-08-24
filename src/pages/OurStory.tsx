@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Heart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -125,6 +126,10 @@ const OurStory = () => {
               So, we look forward to seeing old friends and making new friends.
               Regardless, one thing is for sure, you need to come experience the
               magic that is the FI FunFest. See you soon friends!
+            </p>
+
+            <p className="font-rubik text-lg font-semibold text-foreground text-center mb-8 flex items-center justify-center gap-2">
+              We <Heart className="w-5 h-5 fill-red-500 text-red-500" /> our FI community!
             </p>
 
             {storyPhotos.length > 0 && (
