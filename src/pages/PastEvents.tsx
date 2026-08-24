@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -21,12 +22,38 @@ const pastEventPhotos = Object.entries(
   .map(([, mod]) => mod.default);
 
 const PastEvents = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Past Events - FI FunFest";
   }, []);
+
+  const showPrev = useCallback(() => {
+    setSelectedIndex((current) =>
+      current === null
+        ? null
+        : (current - 1 + pastEventPhotos.length) % pastEventPhotos.length,
+    );
+  }, []);
+
+  const showNext = useCallback(() => {
+    setSelectedIndex((current) =>
+      current === null ? null : (current + 1) % pastEventPhotos.length,
+    );
+  }, []);
+
+  useEffect(() => {
+    if (selectedIndex === null) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "ArrowLeft") showPrev();
+      if (event.key === "ArrowRight") showNext();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex, showPrev, showNext]);
 
   return (
     <div className="min-h-screen">
@@ -68,7 +95,7 @@ const PastEvents = () => {
                   <div
                     key={index}
                     className="cursor-pointer overflow-hidden rounded-xl bg-card shadow-md aspect-square"
-                    onClick={() => setSelectedImage(src)}
+                    onClick={() => setSelectedIndex(index)}
                   >
                     <img
                       src={src}
@@ -86,16 +113,38 @@ const PastEvents = () => {
       <Footer />
 
       <Dialog
-        open={selectedImage !== null}
-        onOpenChange={(open) => !open && setSelectedImage(null)}
+        open={selectedIndex !== null}
+        onOpenChange={(open) => !open && setSelectedIndex(null)}
       >
         <DialogContent className="max-w-4xl w-full border-none bg-transparent p-0 shadow-none">
-          {selectedImage && (
-            <img
-              src={selectedImage}
-              alt="Enlarged FI FunFest 2025 photo"
-              className="max-w-full max-h-[85vh] w-full object-contain rounded-lg shadow-glow"
-            />
+          {selectedIndex !== null && (
+            <div className="relative">
+              <img
+                src={pastEventPhotos[selectedIndex]}
+                alt="Enlarged FI FunFest 2025 photo"
+                className="max-w-full max-h-[85vh] w-full object-contain rounded-lg shadow-glow"
+              />
+              {pastEventPhotos.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={showPrev}
+                    aria-label="Previous photo"
+                    className="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center h-10 w-10 rounded-full bg-background/50 hover:bg-background/80 backdrop-blur-sm transition-colors"
+                  >
+                    <ChevronLeft className="h-6 w-6" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={showNext}
+                    aria-label="Next photo"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center h-10 w-10 rounded-full bg-background/50 hover:bg-background/80 backdrop-blur-sm transition-colors"
+                  >
+                    <ChevronRight className="h-6 w-6" />
+                  </button>
+                </>
+              )}
+            </div>
           )}
         </DialogContent>
       </Dialog>
