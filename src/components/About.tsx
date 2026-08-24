@@ -67,7 +67,7 @@ const About = () => {
                 <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>2 nights lodging
-                    + 5 delicious meals
+                    + 5 meals (Friday dinner through Sunday breakfast)
                   </li>
                   <li className="flex items-start">
                     <span className="text-accent mr-3">•</span>

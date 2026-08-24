@@ -36,6 +36,14 @@ const Navigation = () => {
     }
   };
 
+  const handleLogoClick = (e: React.MouseEvent) => {
+    setIsMenuOpen(false);
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -44,7 +52,11 @@ const Navigation = () => {
     >
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="font-hero font-bold text-xl text-foreground">
+          <Link
+            to="/"
+            onClick={handleLogoClick}
+            className="font-hero font-bold text-xl text-foreground"
+          >
             FI FunFest
           </Link>
           
